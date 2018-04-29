@@ -26,3 +26,5 @@ python badpdf.py
 
 ![alt text](https://github.com/deepzec/Bad-Pdf/blob/master/screenshots/NTLM-hash.PNG "Bad-PDF")
 
+Author : Deepu TV Contact me @twitter.com/DeepZec 
+
