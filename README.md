@@ -13,7 +13,7 @@ Usage:
 
 python badpdf.py
 
-#### Running Bad-PDF in Kali linux:
+#### Run Bad-PDF in Kali linux:
 
 ![alt text](https://github.com/deepzec/Bad-Pdf/blob/master/screenshots/bad-pdf.PNG "Bad-PDF")
 
