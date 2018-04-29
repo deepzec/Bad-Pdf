@@ -80,7 +80,7 @@ BT
 /TI_0 1 Tf
 14 0 0 14 10.000 753.976 Tm
 0.0 0.0 0.0 rg
-(Oops NTLM) Tj
+(PDF Document) Tj
 ET
 endstream
 endobj
