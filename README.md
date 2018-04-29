@@ -22,7 +22,7 @@ python badpdf.py
 
 ![alt text](https://github.com/deepzec/Bad-Pdf/blob/master/screenshots/responder.PNG "Bad-PDF")
 
-#### Run generated Bad-PDF file in windows and get NTLM hash: 
+#### Run generated Bad-PDF file on a windows machine and get NTLM hash: :)
 
 ![alt text](https://github.com/deepzec/Bad-Pdf/blob/master/screenshots/NTLM-hash.PNG "Bad-PDF")
 
