@@ -7,8 +7,7 @@ This method work on all PDF versions and java scripts are not required for this 
 Reference : https://research.checkpoint.com/ntlm-credentials-theft-via-pdf-files/
 
 ### Dependency: 
-Responder 
-Kali Linux
+Responder/Kali Linux
 
 Usage:
 
@@ -26,5 +25,5 @@ python badpdf.py
 
 ![alt text](https://github.com/deepzec/Bad-Pdf/blob/master/screenshots/NTLM-hash.PNG "Bad-PDF")
 
-Author : Deepu TV Contact me @twitter.com/DeepZec 
+#### Author : Deepu TV Contact me @twitter.com/DeepZec 
 
