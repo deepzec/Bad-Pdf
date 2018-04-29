@@ -13,7 +13,7 @@ import subprocess
         |_______/ '-;__/ '.__.;__]     |_____|  |______.'|_____|
         
         This is tool use technique disclosed by the check point team to steal the NTLM hash using malicious PDF file.
-        Author : DeepZec
+        Author : Deepu TV ; Handler: DeepZec
 ====================================================================================================================        
 """
 
