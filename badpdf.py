@@ -1,5 +1,6 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
+from __future__ import print_function
 import io
 import os
 import subprocess
@@ -23,7 +24,7 @@ RED, WHITE, CYAN, GREEN, END = '\033[91m', '\33[46m', '\033[36m', '\033[1;32m', 
 
 
 def create_malpdf(filename, host):
-    print "[*] Starting Process.. [*]"
+    print("[*] Starting Process.. [*]")
     with io.FileIO(filename, "w") as file:
         file.write('''
 %PDF-1.7
@@ -98,7 +99,7 @@ trailer
 if __name__ == "__main__":
 
     try:
-        print """
+        print("""
       
         ______                 __       _______  ______   ________  
         |_   _ \               |  ]     |_   __ \|_   _ `.|_   __  | 
@@ -110,7 +111,7 @@ if __name__ == "__main__":
         By DeepZec 
 
         =============================================================
-        """
+        """)
 
 
         if os.path.isfile(responder):
