@@ -119,7 +119,7 @@ if __name__ == "__main__":
 
         else:
             print("Responder not found..")
-            responder = raw_input("Please enter responder path (Default /usr/bin/responder): \n".format(CYAN, END))
+            responder = raw_input("Please enter responder path (Default /usr/bin/responder): \n")
 
         host = raw_input("Please enter Bad-PDF host IP: \n")
         filename = raw_input("Please enter output file name: \n")
