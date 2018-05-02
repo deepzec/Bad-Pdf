@@ -18,6 +18,11 @@ import subprocess
 ====================================================================================================================        
 """
 
+try:
+    raw_input          # Python 2
+except NameError:
+    raw_input = input  # Python 3
+
 responder = '/usr/bin/responder'
 interface = 'eth0'
 RED, WHITE, CYAN, GREEN, END = '\033[91m', '\33[46m', '\033[36m', '\033[1;32m', '\033[0m'
