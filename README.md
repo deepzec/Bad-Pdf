@@ -6,7 +6,7 @@ This method work on all PDF readers(Any version) and java scripts are not requir
 
 Reference : https://research.checkpoint.com/ntlm-credentials-theft-via-pdf-files/
 
-### Update: Added support to steal NTLM hashes over HTTP
+### Update: Added support to send NTLM hashes over HTTP
 
 ### Disclaimer:
 
