@@ -21,7 +21,7 @@ python badpdf.py
 
 #### Run Bad-PDF in Kali linux:
 
-![alt text](https://github.com/deepzec/Bad-Pdf/blob/master/screenshots/bad-pdf2.PNG "Bad-PDF")
+![alt text](https://github.com/deepzec/Bad-Pdf/blob/master/screenshots/bad-pdf3.PNG "Bad-PDF")
 
 #### Responder waiting for NTLM hash:
 
