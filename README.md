@@ -29,5 +29,13 @@ python badpdf.py
 
 ![alt text](https://github.com/deepzec/Bad-Pdf/blob/master/screenshots/NTLM-hash.PNG "Bad-PDF")
 
-#### Author : Deepu TV Contact me @twitter.com/DeepZec 
+#### Mitigations:
+
+* Vendor patches are not available for this vulnerability. 
+
+* Microsoft issued an optional security enhancement [0] late last year that provides customers with the ability to disable NTLM SSO authentication as a method for public resources.
+
+* Disable external SMB access in firewall to prevent NTLM hash leak to internet
+
+#### Author : Deepu TV ; Feel free to contact me @twitter.com/DeepZec 
 
