@@ -6,7 +6,9 @@ This method work on all PDF readers(Any version) and java scripts are not requir
 
 Reference : https://research.checkpoint.com/ntlm-credentials-theft-via-pdf-files/
 
-### Update: Added support to send NTLM hashes over HTTP
+### Update: Added support to send NTLM hashes over HTTP 
+
+Note : HTTP hash stealing option require, "auto detect proxy" setting to be enabled in IE to work. 
 
 ### Disclaimer:
 
