@@ -2,7 +2,7 @@
 
 Bad-PDF create malicious PDF to steal NTLM(NTLMv1/NTLMv2) Hashes from windows machines, it utilize vulnerability disclosed by checkpoint team to create the malicious PDF file. Bad-Pdf reads the NTLM hashes using Responder listener.
 
-This method work on all PDF readers(Any version) and java scripts are not required for this attack.
+This method work on all PDF readers(Any version) and java scripts are not required for this attack, most of the EDR/Endpoint solution failed to detect this attack.
 
 Reference : https://research.checkpoint.com/ntlm-credentials-theft-via-pdf-files/
 
@@ -38,6 +38,11 @@ python badpdf.py
 * Microsoft issued an optional security enhancement [0] late last year that provides customers with the ability to disable NTLM SSO authentication as a method for public resources.
 
 * Disable external SMB access in firewall to prevent NTLM hash leak to internet
+
+##### Yara Rule:
+
+https://github.com/InQuest/yara-rules/blob/master/NTLM_Credentials_Theft_via_PDF_Files.rule
+
 
 #### Author : Deepu TV ; Feel free to contact me @twitter.com/DeepZec 
 
