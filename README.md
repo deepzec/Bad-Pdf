@@ -7,7 +7,8 @@ Bad-PDF create malicious PDF to steal NTLM(NTLMv1/NTLMv2) Hashes from windows ma
 Reference : https://research.checkpoint.com/ntlm-credentials-theft-via-pdf-files/
 
 ##### Update: 14/5/2017
-Adobe patched this vulnerability and assigned a CVE number CVE-2018-4993 for this vulnerability.
+
+Adobe has released a security update(APSB18-09)to address this vulnerability and CVE-2018-4993 is assigned for this vulnerability.
 
  
 
