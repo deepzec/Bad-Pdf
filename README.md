@@ -2,9 +2,12 @@
 
 Bad-PDF create malicious PDF to steal NTLM(NTLMv1/NTLMv2) Hashes from windows machines, it utilize vulnerability disclosed by checkpoint team to create the malicious PDF file. Bad-Pdf reads the NTLM hashes using Responder listener.
 
-This method work on all PDF readers(Any version) and java scripts are not required for this attack, most of the EDR/Endpoint solution fail to detect this attack.
+~~This method work on all PDF readers(Any version)~~ and java scripts are not required for this attack, most of the EDR/Endpoint solution fail to detect this attack.
 
 Reference : https://research.checkpoint.com/ntlm-credentials-theft-via-pdf-files/
+
+##### Update: 14/5/2017
+Adobe patched this vulnerability and assigned a CVE number CVE-2018-4993 for this vulnerability.
 
  
 
@@ -33,7 +36,9 @@ python badpdf.py
 
 #### Mitigations:
 
-* Vendor patches are not available for this vulnerability. 
+~~* Vendor patches are not available for this vulnerability~~
+
+Adobe patch: https://helpx.adobe.com/security/products/acrobat/apsb18-09.html
 
 * Microsoft issued an optional security enhancement [0] late last year that provides customers with the ability to disable NTLM SSO authentication as a method for public resources.
 
