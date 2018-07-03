@@ -19,9 +19,9 @@ import subprocess
 """
 
 try:
-    raw_input          # Python 2
+    input = raw_input  # Python 2
 except NameError:
-    raw_input = input  # Python 3
+    pass               # Python 3
 
 responder = '/usr/bin/responder'
 interface = 'eth0'
@@ -124,11 +124,11 @@ if __name__ == "__main__":
 
         else:
             print("Responder not found..")
-            responder = raw_input("Please enter responder path (Default /usr/bin/responder): \n")
+            responder = input("Please enter responder path (Default /usr/bin/responder): \n")
 
-        host = raw_input("Please enter Bad-PDF host IP: \n")
-        filename = raw_input("Please enter output file name: \n")
-        interface = raw_input("Please enter the interface name to listen(Default eth0): \n")
+        host = input("Please enter Bad-PDF host IP: \n")
+        filename = input("Please enter output file name: \n")
+        interface = input("Please enter the interface name to listen(Default eth0): \n")
 
         create_malpdf(filename, '\\' + '\\' + host + '\\')
 
