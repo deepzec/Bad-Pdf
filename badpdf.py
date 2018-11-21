@@ -18,7 +18,7 @@ import subprocess
 ====================================================================================================================        
 """
 
-responder = '/usr/bin/responder'
+responder = '/usr/sbin/responder'
 interface = 'eth0'
 RED, WHITE, CYAN, GREEN, END = '\033[91m', '\33[46m', '\033[36m', '\033[1;32m', '\033[0m'
 
@@ -119,7 +119,7 @@ if __name__ == "__main__":
 
         else:
             print("Responder not found..")
-            responder = raw_input("Please enter responder path (Default /usr/bin/responder): \n")
+            responder = raw_input("Please enter responder path (Default /usr/sbin/responder): \n")
 
         host = raw_input("Please enter Bad-PDF host IP: \n")
         filename = raw_input("Please enter output file name: \n")
